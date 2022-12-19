@@ -1,6 +1,11 @@
 import torch
 import torch.nn as nn
 
+#Encoder Decoder
+
+
+
+
 
 class block(nn.Module):
     def __init__(
@@ -129,7 +134,7 @@ class ResNet(nn.Module):
 
         return nn.Sequential(*layers)
 
-
+'''
 def ResNet50(img_channel=3, num_classes=1000):
     return ResNet(block, [3, 4, 6, 3], img_channel, num_classes)
 
@@ -141,3 +146,4 @@ def ResNet101(img_channel=3, num_classes=1000):
 def ResNet152(img_channel=3, num_classes=1000):
     return ResNet(block, [3, 8, 36, 3], img_channel, num_classes)
 
+'''
